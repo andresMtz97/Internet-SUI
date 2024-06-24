@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var monitor = InternetMonitor()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if monitor.isConnected {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                Text("You're connected by \(monitor.connType)")
+            }
+            .padding()
+        } else {
+            VStack{
+                Image(systemName: "wifi.exclamationmark")
+                Text("Please check your connection")
+            }
         }
-        .padding()
+        
     }
 }
 

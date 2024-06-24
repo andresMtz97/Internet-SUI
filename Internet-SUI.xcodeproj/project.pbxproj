@@ -11,6 +11,8 @@
 		866D5FB22C14BDC60052AA97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D5FB12C14BDC60052AA97 /* ContentView.swift */; };
 		866D5FB42C14BDC80052AA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866D5FB32C14BDC80052AA97 /* Assets.xcassets */; };
 		866D5FB72C14BDC80052AA97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866D5FB62C14BDC80052AA97 /* Preview Assets.xcassets */; };
+		866D5FBF2C14C0060052AA97 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866D5FBE2C14C0060052AA97 /* Network.framework */; };
+		866D5FC12C14C06A0052AA97 /* InternetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D5FC02C14C06A0052AA97 /* InternetMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		866D5FB12C14BDC60052AA97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		866D5FB32C14BDC80052AA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		866D5FB62C14BDC80052AA97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		866D5FBE2C14C0060052AA97 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		866D5FC02C14C06A0052AA97 /* InternetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866D5FBF2C14C0060052AA97 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,7 @@
 			children = (
 				866D5FAE2C14BDC60052AA97 /* Internet-SUI */,
 				866D5FAD2C14BDC60052AA97 /* Products */,
+				866D5FBD2C14C0060052AA97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 				866D5FB12C14BDC60052AA97 /* ContentView.swift */,
 				866D5FB32C14BDC80052AA97 /* Assets.xcassets */,
 				866D5FB52C14BDC80052AA97 /* Preview Content */,
+				866D5FC02C14C06A0052AA97 /* InternetMonitor.swift */,
 			);
 			path = "Internet-SUI";
 			sourceTree = "<group>";
@@ -65,6 +72,14 @@
 				866D5FB62C14BDC80052AA97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		866D5FBD2C14C0060052AA97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866D5FBE2C14C0060052AA97 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866D5FC12C14C06A0052AA97 /* InternetMonitor.swift in Sources */,
 				866D5FB22C14BDC60052AA97 /* ContentView.swift in Sources */,
 				866D5FB02C14BDC60052AA97 /* Internet_SUIApp.swift in Sources */,
 			);
